@@ -1,0 +1,315 @@
+/* Styles de base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3 {
+    color: #004080;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles pour le header */
+.main-header {
+    position: relative;
+    height: 80vh; 
+    background: linear-gradient(to bottom, rgba(0, 64, 128, 0.8), rgba(0, 128, 192, 0.8)), url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 64, 128, 0.8);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    background: linear-gradient(90deg, #ffcc00, #004080);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #004080;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ffa500;
+    transform: scale(1.1);
+}
+
+.content-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease;
+}
+
+#before-after {
+    background-color: #e6f2ff;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.eligibility-highlight {
+    background-color: #d9edf7;
+    padding: 20px;
+    border: 2px solid #b3d4fc;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #004080;
+}
+
+/* Styles pour la section Contact */
+#contact {
+    background-color: #e6f2ff; /* Fond légèrement bleu */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 64, 128, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 2px solid #b3d4fc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #004080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+}
+
+form button {
+    padding: 15px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.main-footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+/* Responsive design pour les mobiles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 10px;
+        max-width: 90%; /* Réduit la largeur du contenu */
+    }
+
+    .hero-content h1 {
+        font-size: 2em; /* Réduit la taille du texte */
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .before-after-wrapper {
+        flex-direction: column; /* Les images avant/après seront alignées verticalement */
+        gap: 20px;
+    }
+
+    .image-container {
+        width: 100%; /* Prend toute la largeur de l'écran */
+    }
+
+    .content-section {
+        padding: 20px 10px; /* Réduit les marges */
+    }
+
+    .contact-form-wrapper {
+        padding: 15px; /* Réduit la marge intérieure du formulaire */
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9em; /* Réduit légèrement la taille des champs */
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .main-footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
